@@ -1,0 +1,3367 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.hero {
+  height: auto;
+}
+
+.h1-container {
+  background-color: #0000;
+  align-items: flex-end;
+  max-width: 100vw;
+  height: 60vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+}
+
+.h1 {
+  color: #0c00ff;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 7.2rem;
+}
+
+.jump-mark-container {
+  background-color: #0000;
+  align-items: flex-end;
+  max-width: 100vw;
+  height: 22vh;
+  padding-bottom: 2em;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+}
+
+.jump-mark {
+  background-color: #0000;
+  width: 16vw;
+  height: auto;
+  margin-right: 2.5em;
+}
+
+.navi-btn {
+  color: #707070;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  border: 3px solid #707070;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: Fugaz One, sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+}
+
+.navi-btn:hover {
+  color: #fff;
+  background-color: #707070;
+}
+
+.jump-mark-arrow {
+  justify-content: center;
+  height: 2vh;
+  margin-top: 1em;
+  display: flex;
+}
+
+.about {
+  height: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.body {
+  background-image: url('../images/doodle-blue.svg');
+  background-position: 180% 5%;
+  background-repeat: no-repeat;
+  background-size: 72%;
+}
+
+.about-cnt-01 {
+  align-items: flex-end;
+  height: 30vh;
+  padding-left: 5vw;
+  display: flex;
+}
+
+.h2 {
+  color: #707070;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  font-family: Fugaz One, sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 6rem;
+}
+
+.about-cnt-02 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  display: flex;
+}
+
+.p {
+  color: #0c00ff;
+  height: auto;
+  margin-bottom: 0;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  display: block;
+  overflow: visible;
+}
+
+.img-circle {
+  background-color: #0000;
+  background-image: url('../images/me.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  width: 12em;
+  height: 12em;
+}
+
+.about-cnt-02-right {
+  width: 35%;
+  margin-left: 2vw;
+}
+
+.projects {
+  cursor: auto;
+  height: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero-arrow {
+  display: none;
+}
+
+.projects-cnt-01 {
+  align-items: flex-end;
+  height: 40vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: flex;
+}
+
+.projects-cnt-02 {
+  width: 25%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.process {
+  background-image: url('../images/doodle-green.svg');
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: auto;
+  padding: 20em 5vw 10em;
+}
+
+.process-cnt-01 {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+}
+
+.work-process {
+  width: 50%;
+}
+
+.project-btn {
+  color: #0c00ff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 3px solid #0c00ff;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Fugaz One, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.project-btn:hover {
+  color: #fff;
+  background-color: #0c00ff;
+}
+
+.slide-nav {
+  display: none;
+  overflow: visible;
+}
+
+.projects-webdesign {
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 1.5vw;
+  grid-template: "project-headline project-headline project-headline"
+                 "fabrik-01 fabrik-02 fabrik-03"
+                 "fabrik-description fabrik-description website-btn-01"
+                 / 29vw 29vw 29vw;
+  margin-top: 5em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.h3 {
+  color: silver;
+  margin-top: 0;
+  margin-bottom: .2em;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 4rem;
+  display: flex;
+}
+
+.text-hl {
+  color: silver;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.slide-right-arrow {
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: .25em;
+  display: flex;
+}
+
+.arrow-red-right {
+  cursor: pointer;
+  width: .6em;
+  height: auto;
+}
+
+.h2-silver {
+  color: silver;
+}
+
+.description-btn-mobile {
+  color: #0c00ff;
+  margin-bottom: 0;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  display: none;
+}
+
+.footer {
+  color: #fff;
+  background-color: silver;
+  border-bottom: 1px solid #e4ebf3;
+  padding-top: 3em;
+  font-size: 1rem;
+  position: relative;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-wrapper {
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.footer-logo {
+  display: none;
+}
+
+.footer-content {
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
+  color: #fff;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  grid-auto-columns: 1fr;
+  font-size: 1rem;
+  display: grid;
+}
+
+.footer-block {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer-social-block {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.footer-social-link {
+  cursor: pointer;
+}
+
+.footer-copyright-center {
+  text-align: center;
+  background-color: #707070;
+  margin-top: 5em;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.description-btn-desktop {
+  color: #0c00ff;
+  margin-bottom: 0;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.img-container {
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+}
+
+.base-img {
+  border: .5px solid #e0e0e0;
+  border-radius: 20px;
+}
+
+.footer-btn-top {
+  color: #0c00ff;
+  text-align: center;
+  -webkit-text-stroke-color: transparent;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 3px #0c00ff;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Fugaz One, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.footer-btn-top:hover {
+  color: #fff;
+  background-color: #0c00ff;
+}
+
+.mail {
+  margin-right: .25em;
+}
+
+.footer-btn-about {
+  color: #707070;
+  text-align: center;
+  -webkit-text-stroke-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  border: 3px #707070;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Fugaz One, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.footer-btn-about:hover {
+  color: #fff;
+  background-color: #707070;
+}
+
+.footer-text {
+  margin-bottom: .5em;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.img-hover {
+  opacity: 0;
+  background-color: silver;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity .4s;
+  display: flex;
+  position: absolute;
+}
+
+.img-hover:hover {
+  opacity: 1;
+}
+
+.hover-img {
+  border-radius: 20px;
+  max-width: 65%;
+}
+
+.projects-branding {
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 1.5vw;
+  grid-template: "project-headline project-headline project-headline"
+                 "berry-blend-description berry-blend-01 berry-blend-02"
+                 "sue-me-description sue-me-01 sue-me-02"
+                 "off-season-description off-season-01 off-season-02"
+                 ". . off-season-03"
+                 "gpb-description gpb-01 gpb-02"
+                 ". . gpb-03"
+                 / 29vw 29vw 29vw;
+  margin-top: 5em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.project-description-center {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  max-width: 75%;
+  margin-left: 0;
+}
+
+.dsgvo-impressum {
+  grid-column-gap: 3vw;
+  grid-row-gap: 3vw;
+  grid-template: "dsgvo"
+                 "dsgvo-text"
+                 "impressum"
+                 "impressum-text"
+                 / 80vw;
+  margin-top: 2em;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.utility-page-wrap {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+}
+
+.utility-page-content {
+  text-align: center;
+  flex-direction: column;
+  width: auto;
+  display: flex;
+}
+
+.utility-page-form {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.l-hl {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.section {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.p-scroll {
+  color: #0c00ff;
+  height: 36vh;
+  margin-bottom: 0;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  overflow: scroll;
+}
+
+.btn-back-container {
+  align-self: flex-start;
+  margin-top: 1vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.btn-back {
+  color: #0c00ff;
+  text-align: center;
+  -webkit-text-stroke-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  border: 3px solid #0c00ff;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Fugaz One, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.btn-back:hover {
+  color: #fff;
+  background-color: #0c00ff;
+}
+
+.slider-mask {
+  border-radius: 20px;
+}
+
+.icon-box {
+  flex-direction: column;
+  height: auto;
+  display: flex;
+}
+
+.ps {
+  width: auto;
+  height: 3em;
+  margin-right: .5em;
+}
+
+.ai {
+  height: 3em;
+  margin-right: .5em;
+}
+
+.id, .xds {
+  height: 3em;
+}
+
+.xd, .ae {
+  height: 3em;
+  margin-right: .5em;
+}
+
+.pr {
+  height: 3em;
+}
+
+.text-hl-container {
+  color: #0c00ff;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  display: flex;
+  overflow: visible;
+}
+
+.icon-sub-1 {
+  align-self: flex-end;
+  height: auto;
+  margin-top: 1em;
+}
+
+.icon-sub-2 {
+  align-self: flex-end;
+  height: auto;
+  margin-top: .5em;
+}
+
+.lang-box {
+  align-items: center;
+  height: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+}
+
+.lang {
+  color: silver;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: .5em;
+  font-family: Fugaz One, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.lang:hover, .lang.w--current {
+  color: #0c00ff;
+}
+
+.sad-face {
+  align-self: center;
+  width: 25%;
+}
+
+.lock {
+  align-self: center;
+  width: 25%;
+  margin-bottom: 1em;
+}
+
+.text-field {
+  color: silver;
+  border: 3px solid silver;
+  border-radius: 20px;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.password {
+  color: #0c00ff;
+  height: auto;
+  margin-bottom: 0;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  display: none;
+  overflow: visible;
+}
+
+.marquee-horizontal {
+  z-index: 200;
+  background-color: #fff;
+  border-bottom: 3px solid #707070;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.track-horizontal {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.marquee-text {
+  color: #707070;
+  text-transform: none;
+  flex: none;
+  margin-right: 1vw;
+  font-family: Zilla Slab, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.project-description-center-mrg {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.slide-left-arrow {
+  align-items: center;
+  padding-left: .25em;
+  display: flex;
+}
+
+.arrow-red-left {
+  cursor: pointer;
+  width: .6em;
+  height: auto;
+}
+
+.project-img {
+  border: .5px solid #e0e0e0;
+  border-radius: 20px;
+}
+
+.project-slider {
+  border-radius: 20px;
+  height: 100%;
+}
+
+.projects-posters {
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 1.5vw;
+  grid-template: "project-headline-01 project-headline-01 project-headline-01"
+                 "vision sabotage sue-me"
+                 "vision-description sabotage-description sue-me-description"
+                 "issey-miyake-01 issey-miyake-01 issey-miyake-description" 70vh
+                 "issey-miyake-02 issey-miyake-03 issey-miyake-04"
+                 "vitra-01 vitra-02 destination-w"
+                 "vitra-description vitra-description destination-w-description"
+                 / 29vw 29vw 29vw;
+  margin-top: 5em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.slide-img {
+  border: .5px solid #e0e0e0;
+  border-radius: 20px;
+}
+
+.project-description-center-nomrg {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.p-link-intern {
+  text-transform: uppercase;
+  border: 3px solid #0c00ff;
+  border-radius: 20px;
+  padding-left: 8px;
+  padding-right: 7px;
+  font-family: Fugaz One, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.image-2, .img-foreground {
+  border: .5px solid #e0e0e0;
+  border-radius: 20px;
+}
+
+.eye-link {
+  display: none;
+}
+
+.project-bg-img {
+  background-image: url('../images/issey-miyake-gallery.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: .5px solid #e0e0e0;
+  border-radius: 20px;
+}
+
+.projects-album-covers {
+  grid-column-gap: 16px;
+  grid-template: "project-headline-01 project-headline-01 project-headline-01"
+                 "wavelength-01 wavelength-lettering wavelength-lettering"
+                 "wavelength-description . ."
+                 "grimes-01 . ."
+                 "grimes-description . ."
+                 / 29vw 29vw 29vw;
+  margin-top: 5em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.projects-off-season {
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 1.5vw;
+  grid-template: "project-headline-01 project-headline-01 project-headline-01"
+                 "vision sabotage sue-me"
+                 "vision-description sabotage-description sue-me-description"
+                 "issey-miyake-01 issey-miyake-01 issey-miyake-description" 70vh
+                 "issey-miyake-02 issey-miyake-03 issey-miyake-04"
+                 "vitra-01 vitra-02 destination-w"
+                 "vitra-description vitra-description ."
+                 ". . ."
+                 / 29vw 29vw 29vw;
+  margin-top: 5em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.projects-own {
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 1.5vw;
+  grid-template: "project-headline-01 project-headline-01 project-headline-01"
+                 "project-headline-description project-headline-description project-headline-description"
+                 "off-season-01 off-season-02 off-season-03"
+                 "off-season-01-btn off-season-02-btn off-season-03-btn"
+                 / 29vw 29vw 29vw;
+  margin-top: 5em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.h-logo {
+  max-width: 75%;
+}
+
+.projects-art-direction {
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 1.5vw;
+  grid-template: "project-headline project-headline project-headline"
+                 "jette-description jette-gallery ."
+                 ". jette-product-shots ."
+                 ". jette-product-shots-description ."
+                 / 29vw 29vw 29vw;
+  margin-top: 5em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.grid {
+  grid-column-gap: .25vw;
+  grid-row-gap: .25vw;
+  border-radius: 20px;
+  grid-template: "jette-01 jette-02 jette-03"
+                 "jette-04 jette-05 jette-06"
+                 / 1fr 1fr 1fr;
+}
+
+.h-tab {
+  font-family: Fugaz One, sans-serif;
+  font-size: 1rem;
+}
+
+.jette-menu {
+  text-align: center;
+  margin-bottom: .75vh;
+  font-family: Fugaz One, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-decoration: none;
+}
+
+.fw24 {
+  color: silver;
+  background-color: #0000;
+  border-top: 3px solid silver;
+  border-bottom: 3px solid silver;
+  border-right: 3px solid silver;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.fw24:hover {
+  color: #707070;
+}
+
+.fw24.w--current {
+  color: #fff;
+  background-color: silver;
+}
+
+.fw23 {
+  color: silver;
+  background-color: #0000;
+  border: 3px solid silver;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.fw23:hover {
+  color: #707070;
+}
+
+.fw23.w--current {
+  color: #fff;
+  background-color: silver;
+  border-top: 3px solid silver;
+  border-bottom: 3px solid silver;
+  border-left: 3px solid silver;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.sp24 {
+  color: silver;
+  background-color: #0000;
+  border-top: 3px solid silver;
+  border-bottom: 3px solid silver;
+  border-right: 3px solid silver;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.sp24:hover {
+  color: #707070;
+}
+
+.sp24.w--current {
+  color: #fff;
+  background-color: silver;
+}
+
+.su24 {
+  color: silver;
+  background-color: #0000;
+  border-top: 3px solid silver;
+  border-bottom: 3px solid silver;
+  border-right: 3px solid silver;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.su24:hover {
+  color: #707070;
+}
+
+.su24.w--current {
+  color: #fff;
+  background-color: silver;
+}
+
+.tab-txt, .text-block-2, .text-block-3, .text-block-4 {
+  color: silver;
+}
+
+.menu-webdesign {
+  color: silver;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0000;
+  border: 3px solid #0c00ff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  width: 100vw;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: Fugaz One, sans-serif;
+}
+
+.menu-webdesign:hover {
+  color: #0c00ff;
+}
+
+.menu-webdesign.w--current {
+  color: #fff;
+  text-align: center;
+  background-color: #0c00ff;
+  border: 3px solid #0c00ff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.menu-posters {
+  color: silver;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0000;
+  border: 3px solid #0c00ff;
+  border-top-style: none;
+  width: 100vw;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: Fugaz One, sans-serif;
+}
+
+.menu-posters:hover {
+  color: #0c00ff;
+}
+
+.menu-posters.w--current {
+  color: #fff;
+  background-color: #0c00ff;
+  border: 3px solid #0c00ff;
+}
+
+.menu-logo-branding {
+  color: silver;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0000;
+  border: 3px solid #0c00ff;
+  border-top-style: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100vw;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: Fugaz One, sans-serif;
+}
+
+.menu-logo-branding:hover {
+  color: #0c00ff;
+  -webkit-text-stroke-color: #0c00ff;
+}
+
+.menu-logo-branding.w--current {
+  color: #fff;
+  background-color: #0c00ff;
+  border: 3px solid #0c00ff;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.projects-nav {
+  margin-top: 5vh;
+  margin-left: 0;
+}
+
+.projects-menu {
+  border: 3px #0c00ff;
+  border-radius: 20px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-family: Fugaz One, sans-serif;
+  font-size: 1.6rem;
+}
+
+.menu-covers {
+  color: silver;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0000;
+  border: 3px solid #0c00ff;
+  border-top-style: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100vw;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: Fugaz One, sans-serif;
+}
+
+.menu-covers:hover {
+  color: #0c00ff;
+}
+
+.menu-covers.w--current {
+  color: #fff;
+  background-color: #0c00ff;
+  border: 3px solid #0c00ff;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.menu-art-direction {
+  color: silver;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0000;
+  border: 3px solid #0c00ff;
+  border-top-style: none;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100vw;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: Fugaz One, sans-serif;
+}
+
+.menu-art-direction:hover {
+  color: #0c00ff;
+}
+
+.menu-art-direction.w--current {
+  color: #fff;
+  background-color: #0c00ff;
+  border: 3px solid #0c00ff;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.project-img-01 {
+  border: 1px #000;
+  border-radius: 20px 0 0;
+}
+
+.project-img-02 {
+  border: .5px #e0e0e0;
+  border-radius: 0;
+}
+
+.project-img-03 {
+  border: .5px #e0e0e0;
+  border-radius: 0 20px 0 0;
+}
+
+.project-img-04 {
+  border: .5px #e0e0e0;
+  border-radius: 0 0 0 20px;
+}
+
+.project-img-05 {
+  border: .5px #e0e0e0;
+  border-radius: 0 0 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .h1-container {
+    height: 50vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .h1 {
+    font-size: 3.8rem;
+    line-height: 4.3rem;
+  }
+
+  .jump-mark-container {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 38vh;
+    padding-bottom: 2em;
+  }
+
+  .jump-mark {
+    width: 30vw;
+  }
+
+  .navi-btn {
+    margin-bottom: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .jump-mark-arrow {
+    display: none;
+  }
+
+  .about {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .body {
+    background-position: 200% -5%;
+    background-size: 80%;
+  }
+
+  .about-cnt-01 {
+    height: 40vh;
+    padding-left: 0;
+  }
+
+  .h2 {
+    margin-left: 0;
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  .about-cnt-02 {
+    justify-content: flex-end;
+  }
+
+  .p {
+    margin-bottom: 0;
+  }
+
+  .img-circle {
+    width: 10em;
+    height: 10em;
+    display: block;
+  }
+
+  .about-cnt-02-right {
+    width: 75%;
+    margin-left: 2vw;
+  }
+
+  .hero-arrow {
+    justify-content: center;
+    align-items: flex-end;
+    height: 54vh;
+    display: none;
+  }
+
+  .image {
+    height: 2vh;
+  }
+
+  .projects-cnt-01 {
+    height: 25vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .projects-cnt-02 {
+    width: 50%;
+  }
+
+  .process {
+    background-size: 60%;
+    padding-left: 5vw;
+  }
+
+  .project-btn {
+    text-align: center;
+  }
+
+  .project-description, .btn-container {
+    margin-bottom: 2em;
+  }
+
+  .projects-webdesign {
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    grid-template: "project-headline project-headline"
+                   "fabrik-01 fabrik-02"
+                   "fabrik-03 website-btn-01"
+                   / 44.5vw 44.5vw;
+    grid-auto-columns: .25fr;
+    grid-auto-flow: row;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .h3 {
+    font-size: 3rem;
+  }
+
+  .arrow-red-right {
+    width: .4em;
+  }
+
+  .description-btn-mobile {
+    margin-bottom: .5em;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    display: block;
+  }
+
+  .footer-container {
+    max-width: 728px;
+  }
+
+  .footer-content {
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+  }
+
+  .description-btn-desktop {
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .img-container {
+    cursor: auto;
+  }
+
+  .fabrik-project-description-desktop {
+    display: none;
+  }
+
+  .footer-btn-top, .footer-btn-about {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .footer-text {
+    margin-bottom: .4em;
+  }
+
+  .img-hover {
+    display: none;
+  }
+
+  .img-hover:focus {
+    opacity: 0;
+  }
+
+  .projects-branding {
+    grid-template: "project-headline project-headline"
+                   "berry-blend-01 berry-blend-02"
+                   "berry-blend-description berry-blend-description"
+                   "sue-me-01 sue-me-02"
+                   "sue-me-description sue-me-02"
+                   "off-season-01 off-season-02"
+                   "off-season-description off-season-03"
+                   "gpb-01 gpb-02"
+                   "gpb-description gpb-03"
+                   / 44.5vw 44.5vw;
+    margin-top: 5em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .dsgvo-impressum {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 90vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .utility-page-wrap {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .l-hl {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .p-scroll {
+    margin-bottom: 0;
+  }
+
+  .btn-back-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .btn-back {
+    text-align: center;
+  }
+
+  .text-hl-container {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .icon-sub-1, .icon-sub-2 {
+    align-self: flex-end;
+  }
+
+  .lang-box {
+    height: 6vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .lang {
+    font-size: 1.8rem;
+  }
+
+  .password {
+    margin-bottom: 0;
+  }
+
+  .marquee-horizontal {
+    height: 6vh;
+  }
+
+  .marquee-text {
+    font-size: 1.8rem;
+  }
+
+  .project-description-center-mrg {
+    margin-bottom: 3em;
+  }
+
+  .arrow-red-left {
+    width: .4em;
+  }
+
+  .projects-posters {
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    grid-template: "project-headline project-headline"
+                   "vision sabotage"
+                   "vision-description sabotage-description"
+                   "sue-me ."
+                   "sue-me-description ."
+                   "issey-miyake-01 issey-miyake-01" 65vh
+                   "issey-miyake-description issey-miyake-02"
+                   "issey-miyake-03 issey-miyake-04"
+                   "vitra-01 vitra-02"
+                   "vitra-description vitra-description"
+                   "destination-w ."
+                   "destination-w-description ."
+                   / 44.5vw 44.5vw;
+    grid-auto-columns: .25fr;
+    grid-auto-flow: row;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .icon-eye {
+    cursor: pointer;
+    width: 30px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    position: static;
+    inset: auto 0% 0% auto;
+  }
+
+  .eye-link {
+    padding-bottom: 0;
+    padding-right: 0;
+    display: block;
+    position: absolute;
+    inset: auto 0% 0% auto;
+  }
+
+  .projects-album-covers {
+    grid-template-columns: 44.5vw 44.5vw;
+    grid-template-areas: "project-headline-01 project-headline-01"
+                         "wavelength-01 wavelength-lettering"
+                         "wavelength-description ."
+                         "grimes-01 ."
+                         "grimes-description .";
+  }
+
+  .projects-off-season {
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    grid-template: "project-headline project-headline"
+                   "vision sabotage"
+                   "vision-description sabotage-description"
+                   "sue-me ."
+                   "sue-me-description ."
+                   "issey-miyake-01 issey-miyake-01" 65vh
+                   "issey-miyake-description issey-miyake-02"
+                   "issey-miyake-03 issey-miyake-04"
+                   "vitra-01 vitra-02"
+                   "vitra-description vitra-description"
+                   "destination-w off-season-01"
+                   "destination-w-description off-season-description"
+                   "off-season-02 ."
+                   "off-season-02-description ."
+                   / 44.5vw 44.5vw;
+    grid-auto-columns: .25fr;
+    grid-auto-flow: row;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .projects-own {
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    grid-template: "project-headline-01 project-headline-01"
+                   "project-headline-description project-headline-description"
+                   "off-season-01 off-season-02"
+                   "off-season-01-btn off-season-02-btn"
+                   "off-season-03 ."
+                   "off-season-03-btn ."
+                   / 44.5vw 44.5vw;
+    grid-auto-columns: .25fr;
+    grid-auto-flow: row;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .projects-art-direction {
+    grid-template: "project-h3 project-h3"
+                   "jette-description jette-gallery"
+                   "jette-product-shots jette-product-shots-description"
+                   / 44.5vw 44.5vw;
+    margin-top: 5em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .grid {
+    grid-column-gap: .75vw;
+    grid-row-gap: .75vw;
+  }
+
+  .fw24, .fw23.w--current, .sp24, .su24 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menu-webdesign {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .menu-webdesign.w--current {
+    border-style: solid;
+  }
+
+  .menu-posters, .menu-logo-branding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .projects-menu {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 1.2rem;
+  }
+
+  .menu-covers, .menu-art-direction, .menu-art-direction.w--current {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .h1-container {
+    height: 60vh;
+  }
+
+  .h1 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
+  .body {
+    background-position: -26% 10%;
+    background-size: 160%;
+  }
+
+  .about-cnt-01 {
+    height: 20vh;
+  }
+
+  .h2 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+
+  .about-cnt-02 {
+    flex-direction: row;
+  }
+
+  .hero-arrow {
+    height: 29vh;
+    padding-bottom: 1em;
+    display: flex;
+  }
+
+  .projects-cnt-01 {
+    height: 20vh;
+  }
+
+  .process {
+    padding-right: 5vw;
+  }
+
+  .work-process {
+    width: auto;
+  }
+
+  .project-btn {
+    margin-top: 0;
+  }
+
+  .project-description {
+    margin-bottom: 3em;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .projects-webdesign {
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template: "project-headline"
+                   "fabrik-01"
+                   "fabrik-02"
+                   "fabrik-03"
+                   "website-btn-01"
+                   / 96vw;
+    grid-auto-columns: .25fr;
+    grid-auto-flow: row;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .h3 {
+    margin-bottom: .1em;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    font-size: 2.6rem;
+  }
+
+  .text-hl {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .description-btn-mobile {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .footer {
+    padding-top: 1em;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+
+  .footer-block {
+    align-items: center;
+  }
+
+  .footer-social-block {
+    margin-top: 20px;
+  }
+
+  .fabrik-project-description-desktop {
+    margin-bottom: 1vw;
+  }
+
+  .mail {
+    margin-right: .3em;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .projects-branding {
+    grid-row-gap: 1.5vw;
+    grid-template: "project-headline"
+                   "berry-blend-01"
+                   "berry-blend-02"
+                   "berry-blend-description"
+                   "sue-me-01"
+                   "sue-me-02"
+                   "sue-me-description"
+                   "off-season-01"
+                   "off-season-02"
+                   "off-season-description"
+                   "off-season-03"
+                   "gpb-01"
+                   "gpb-02"
+                   "gpb-description"
+                   "gpb-03"
+                   / 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .project-description-center {
+    margin-bottom: 2em;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .logo {
+    max-width: 60%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .dsgvo-impressum {
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .l-hl {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .btn-back-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .icon-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ps, .ai, .id, .xds, .xd, .ae, .pr {
+    height: 3em;
+  }
+
+  .icon-sub-1 {
+    align-self: flex-end;
+    width: auto;
+  }
+
+  .icon-sub-2 {
+    align-self: flex-end;
+    width: auto;
+    margin-top: .5em;
+  }
+
+  .lang-box {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .lang {
+    line-height: 2rem;
+  }
+
+  .marquee-horizontal {
+    height: 5vh;
+  }
+
+  .marquee-text {
+    font-size: 1.6rem;
+  }
+
+  .project-description-center-mrg {
+    margin-bottom: 3em;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .projects-posters {
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template: "project-headline"
+                   "vision"
+                   "vision-description"
+                   "sabotage"
+                   "sabotage-description"
+                   "sue-me"
+                   "sue-me-description"
+                   "issey-miyake-01" 60vh
+                   "issey-miyake-description"
+                   "issey-miyake-02"
+                   "issey-miyake-03"
+                   "issey-miyake-04"
+                   "vitra-01"
+                   "vitra-02"
+                   "vitra-description"
+                   "destination-w"
+                   "destination-w-description"
+                   / 96vw;
+    grid-auto-rows: auto;
+    grid-auto-columns: .25fr;
+    grid-auto-flow: row;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .project-description-center-nomrg {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .project-bg-img {
+    height: auto;
+  }
+
+  .projects-album-covers {
+    grid-template: "project-headline-01 project-headline-01"
+                   "wavelength-01 ."
+                   "wavelength-lettering ."
+                   "wavelength-description ."
+                   "grimes-01 ."
+                   "grimes-description ."
+                   / 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .projects-off-season {
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template: "project-headline"
+                   "vision"
+                   "vision-description"
+                   "sabotage"
+                   "sabotage-description"
+                   "sue-me"
+                   "sue-me-description"
+                   "issey-miyake-01" 60vh
+                   "issey-miyake-description"
+                   "issey-miyake-02"
+                   "issey-miyake-03"
+                   "issey-miyake-04"
+                   "vitra-01"
+                   "vitra-02"
+                   "vitra-description"
+                   "destination-w"
+                   "destination-w-description"
+                   "off-season-01"
+                   "off-season-description"
+                   / 96vw;
+    grid-auto-rows: auto;
+    grid-auto-columns: .25fr;
+    grid-auto-flow: row;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .projects-own {
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template: "project-headline"
+                   "project-headline-description"
+                   "off-season-01"
+                   "off-season-01-btn"
+                   "off-season-02"
+                   "off-season-02-btn"
+                   "off-season-03"
+                   "off-season-03-btn"
+                   / 96vw;
+    grid-auto-rows: auto;
+    grid-auto-columns: .25fr;
+    grid-auto-flow: row;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .h-logo {
+    max-width: 50%;
+  }
+
+  .projects-art-direction {
+    grid-row-gap: 1.5vw;
+    grid-template: "project-h3"
+                   "jette-description"
+                   "jette-gallery"
+                   "jette-product-shots"
+                   "jette-product-shots-description"
+                   / 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  .jette-menu {
+    text-align: center;
+  }
+
+  .fw24, .fw23.w--current, .sp24, .su24 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .menu-webdesign.w--current {
+    border-style: solid;
+  }
+
+  .projects-menu {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .h1-container {
+    height: 55vh;
+  }
+
+  .h1 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+
+  .jump-mark-container {
+    justify-content: flex-end;
+    align-items: stretch;
+    height: 60vh;
+  }
+
+  .jump-mark {
+    width: 100%;
+  }
+
+  .body {
+    background-position: 0 12%;
+    background-size: 236%;
+  }
+
+  .about-cnt-01 {
+    height: 20vh;
+  }
+
+  .h2 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+
+  .about-cnt-02 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-circle {
+    width: 8em;
+    height: 8em;
+    margin-bottom: 1em;
+  }
+
+  .about-cnt-02-right {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .hero-arrow {
+    height: 30vh;
+    padding-bottom: 1em;
+    display: flex;
+  }
+
+  .projects-cnt-01 {
+    justify-content: flex-end;
+    height: 30vh;
+  }
+
+  .projects-cnt-02 {
+    width: auto;
+    margin-left: 5vw;
+  }
+
+  .process {
+    padding-top: 5em;
+  }
+
+  .work-process {
+    width: auto;
+    margin-top: 1em;
+  }
+
+  .project-description {
+    margin-bottom: 3em;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .h3 {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+
+  .text-hl {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  .description-btn-mobile {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .footer-container {
+    max-width: none;
+  }
+
+  .fabrik-project-description-desktop {
+    margin-bottom: 4em;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .project-description-center {
+    margin-bottom: 3em;
+  }
+
+  .dsgvo-impressum {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .l-hl {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .section {
+    width: auto;
+    margin-right: 5vw;
+    padding-left: 5vw;
+  }
+
+  .btn-back-container {
+    width: 90vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text-hl-container {
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .icon-sub-1, .icon-sub-2 {
+    align-self: center;
+  }
+
+  .lang-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .lang {
+    font-size: 1.4rem;
+  }
+
+  .body-2 {
+    display: flex;
+  }
+
+  .project-description-center-mrg {
+    margin-bottom: 4em;
+  }
+
+  .projects-posters {
+    grid-template-rows: auto auto auto auto auto auto auto 40vh auto auto auto auto;
+    grid-template-areas: "project-headline"
+                         "vision"
+                         "vision-description"
+                         "sabotage"
+                         "sabotage-description"
+                         "sue-me"
+                         "sue-me-description"
+                         "issey-miyake-01"
+                         "issey-miyake-description"
+                         "issey-miyake-02"
+                         "issey-miyake-03"
+                         "issey-miyake-04"
+                         "vitra-01"
+                         "vitra-02"
+                         "vitra-description"
+                         "destination-w"
+                         "destination-w-description";
+  }
+
+  .projects-off-season {
+    grid-template-rows: auto auto auto auto auto auto auto 40vh auto auto auto auto;
+  }
+
+  .projects-own {
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+
+  .h-logo {
+    max-width: 60%;
+  }
+
+  .projects-art-direction {
+    margin-top: 2em;
+  }
+
+  .jette-menu {
+    display: flex;
+  }
+
+  .fw24 {
+    text-align: center;
+    border-top-style: solid;
+    border-left: 3px silver;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .fw24.w--current {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .fw23, .fw23.w--current {
+    text-align: center;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sp24 {
+    text-align: center;
+    border-top-style: solid;
+    border-left: 3px silver;
+    border-right-style: solid;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+  }
+
+  .sp24.w--current {
+    text-align: center;
+  }
+
+  .su24 {
+    text-align: center;
+    border-top-style: solid;
+    border-left: 3px silver;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .menu-webdesign.w--current {
+    border-style: solid;
+  }
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3c8-6f5c87b9 {
+  grid-area: project-headline;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3cb-6f5c87b9 {
+  grid-area: fabrik-02;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3cc-6f5c87b9 {
+  grid-area: fabrik-01;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3cd-6f5c87b9 {
+  grid-area: fabrik-03;
+}
+
+#w-node-_4b9f744b-705d-0706-7cca-a8e520fc4e44-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3dd-6f5c87b9 {
+  grid-area: fabrik-description;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b47f-6f5c87b9 {
+  grid-area: project-headline-01;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b482-6f5c87b9 {
+  grid-area: vision;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b486-6f5c87b9 {
+  grid-area: sabotage;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b48a-6f5c87b9 {
+  grid-area: sue-me;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b48e-6f5c87b9 {
+  grid-area: vision-description;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b491-6f5c87b9 {
+  grid-area: sabotage-description;
+}
+
+#w-node-_2a4da13c-3111-2382-a67d-e6183fb4d454-6f5c87b9 {
+  grid-area: issey-miyake-01;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b494-6f5c87b9 {
+  grid-area: sue-me-description;
+}
+
+#w-node-ff06d00e-5f9e-f68c-8122-d79db8aa566c-6f5c87b9, #w-node-_9407dc7a-7dc9-1c28-b662-8881f8b72225-6f5c87b9, #w-node-_7262d45d-572b-8381-b14e-a780c2cad968-6f5c87b9, #w-node-e7f8fa73-8e54-1db2-9ae2-4af4cd45fa9f-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_4fe82f59-3687-1bbb-4ebb-e07efecb9b73-6f5c87b9 {
+  grid-area: destination-w;
+}
+
+#w-node-_9e3e6f09-57ff-2639-9515-abf0722754d7-6f5c87b9 {
+  grid-area: destination-w-description;
+}
+
+#w-node-_2e2e6be2-bc2d-502c-e157-9406fe385e4f-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_23694b2e-5235-ca6a-dc05-825581aac1ca-6f5c87b9 {
+  grid-area: vitra-description;
+}
+
+#w-node-_57c33d82-e492-0065-60fb-311725337c7e-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-a36d4980-1b8f-fd59-6f8b-6ffccf4b2e2c-6f5c87b9 {
+  grid-area: off-season-02;
+}
+
+#w-node-_6581bba7-b7fd-3324-f7fc-be4c5567b6bc-6f5c87b9 {
+  grid-area: off-season-03;
+}
+
+#w-node-_955e3ddf-6951-8142-96b8-d5d3c0c5e4e1-6f5c87b9 {
+  grid-area: off-season-01;
+}
+
+#w-node-_4ad5c11a-b811-d6ec-13f0-c8d2d940adbf-6f5c87b9 {
+  grid-area: off-season-01-btn;
+}
+
+#w-node-eb1e18b5-e7ca-2c7c-ad6a-53ff0c06ffaf-6f5c87b9 {
+  grid-area: off-season-03-btn;
+}
+
+#w-node-d3a03e49-3213-57d5-59d0-f94acdaef379-6f5c87b9 {
+  grid-area: off-season-02-btn;
+}
+
+#off-season-logo.w-node-_74b4a29f-c754-5a3b-4bdc-3ef83055b625-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: center start;
+}
+
+#w-node-_2f27dc00-f0e1-b0e7-4bad-1cdae8457b5b-6f5c87b9 {
+  grid-area: project-headline-description;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864ccf3-6f5c87b9 {
+  grid-area: project-headline;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864ccf6-6f5c87b9 {
+  grid-area: berry-blend-description;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864ccf9-6f5c87b9 {
+  grid-area: berry-blend-01;
+  place-self: center;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864ccfa-6f5c87b9 {
+  grid-area: berry-blend-02;
+}
+
+#sue-me-logo.w-node-eba0a40a-e13d-e939-c791-d9e30864cd05-6f5c87b9 {
+  grid-area: sue-me-01;
+  place-self: center;
+}
+
+#off-season-logo.w-node-_1f219bfc-061a-6efd-c094-9f87d6dc6bd9-6f5c87b9 {
+  grid-area: off-season-01;
+  place-self: center;
+}
+
+#w-node-_62fd5614-ce88-a827-4f4c-a399fc699cfe-6f5c87b9 {
+  grid-area: sue-me-02;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864cd11-6f5c87b9 {
+  grid-area: gpb-01;
+  place-self: center;
+}
+
+#w-node-a079229d-9d75-73c8-f063-832887581d4a-6f5c87b9 {
+  grid-area: off-season-02;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864cd15-6f5c87b9 {
+  grid-area: sue-me-description;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864cd18-6f5c87b9 {
+  grid-area: gpb-02;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864cd29-6f5c87b9 {
+  grid-area: gpb-description;
+}
+
+#w-node-efc0280a-d9ff-ffc8-81e4-6a77d4971714-6f5c87b9 {
+  grid-area: gpb-03;
+}
+
+#w-node-_914cd455-2134-3595-e788-3e725ccae9c4-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_685a6b0b-f246-e315-45c1-4be57d5c8213-6f5c87b9 {
+  grid-area: off-season-03;
+}
+
+#w-node-_028cc0f8-bc7a-6da3-1df4-742248d5a4c5-6f5c87b9 {
+  grid-area: project-headline-01;
+}
+
+#w-node-c89f0b06-3fb7-13cb-deba-b3ab8c9a6982-6f5c87b9 {
+  grid-area: wavelength-lettering;
+  place-self: center;
+}
+
+#w-node-_32d3de08-77fc-374c-49a0-e031c39bc8c5-6f5c87b9 {
+  grid-area: grimes-01;
+}
+
+#w-node-_6234b650-688c-a648-0c92-ce7b7706525c-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-a63aac6b-6fec-3923-ae61-950501894545-6f5c87b9 {
+  grid-area: grimes-description;
+}
+
+#w-node-a43587f3-2213-2068-00c7-54646cf47d91-6f5c87b9 {
+  grid-area: wavelength-description;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fd6-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fe6-6f5c87b9 {
+  grid-area: jette-gallery;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fe7-6f5c87b9 {
+  grid-area: jette-01;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fe8-6f5c87b9, #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fe9-6f5c87b9, #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fea-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0feb-6f5c87b9 {
+  grid-area: jette-05;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fec-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fef-6f5c87b9 {
+  grid-area: jette-01;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ff0-6f5c87b9, #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ff1-6f5c87b9, #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ff2-6f5c87b9, #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ff3-6f5c87b9, #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ff4-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ff7-6f5c87b9 {
+  grid-area: jette-01;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ff8-6f5c87b9, #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ff9-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ffa-6f5c87b9 {
+  grid-area: jette-06;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ffb-6f5c87b9 {
+  grid-area: jette-05;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0ffc-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fff-6f5c87b9 {
+  grid-area: jette-01;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d1000-6f5c87b9, #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d1001-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d1002-6f5c87b9 {
+  grid-area: jette-05;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d1003-6f5c87b9 {
+  grid-area: jette-06;
+}
+
+#w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d1004-6f5c87b9 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#art-direction.w-node-_6e59923a-992a-2b8b-c7d8-be36bb46c4ae-6f5c87b9 {
+  grid-area: project-headline;
+}
+
+#w-node-a97b4d13-4804-1d45-dd02-2a10054dd8f8-6f5c87b9 {
+  grid-area: jette-product-shots-description;
+}
+
+#w-node-_517bcdd2-c44e-eeff-0d86-09e61ab72ae9-6f5c87b9 {
+  grid-area: jette-product-shots;
+}
+
+#w-node-_6e59923a-992a-2b8b-c7d8-be36bb46c4b1-6f5c87b9 {
+  grid-area: jette-description;
+}
+
+#w-node-_69869ce6-0a5f-9df4-4b11-17ac45c694f1-6f5c87b9, #w-node-_69869ce6-0a5f-9df4-4b11-17ac45c694fa-6f5c87b9, #w-node-_69869ce6-0a5f-9df4-4b11-17ac45c69505-6f5c87b9, #w-node-bca1815f-89c6-31d9-850d-e7672d7f4fb3-6f5c87c0 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-faf40c6f-fed9-a5db-1e76-6cea53c62507-6f5c87c0 {
+  grid-area: impressum;
+}
+
+#w-node-_95f27039-b9cc-06d4-2b61-eba3f059540c-6f5c87c0 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_3e4464ba-7d85-87bb-d08d-ec0552b7f2ef-6f5c87c0 {
+  grid-area: impressum-text;
+}
+
+#w-node-bca1815f-89c6-31d9-850d-e7672d7f4fb3-6f5c87c1 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-faf40c6f-fed9-a5db-1e76-6cea53c62507-6f5c87c1 {
+  grid-area: impressum;
+}
+
+#w-node-_95f27039-b9cc-06d4-2b61-eba3f059540c-6f5c87c1 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_3e4464ba-7d85-87bb-d08d-ec0552b7f2ef-6f5c87c1 {
+  grid-area: impressum-text;
+}
+
+#w-node-ec1c083b-8c18-d8e6-9e6e-278e975dd117-6f5c87c4 {
+  grid-area: project-headline;
+}
+
+#w-node-ffa1e38c-1df2-ce47-11f2-ab5c768afe03-6f5c87c4 {
+  grid-area: fabrik-02;
+}
+
+#w-node-ec1c083b-8c18-d8e6-9e6e-278e975dd116-6f5c87c4 {
+  grid-area: fabrik-01;
+}
+
+#w-node-ec1c083b-8c18-d8e6-9e6e-278e975dd11a-6f5c87c4 {
+  grid-area: fabrik-03;
+}
+
+#w-node-ec1c083b-8c18-d8e6-9e6e-278e975dd125-6f5c87c4 {
+  grid-area: website-btn-01;
+}
+
+#w-node-ec1c083b-8c18-d8e6-9e6e-278e975dd136-6f5c87c4 {
+  grid-area: fabrik-description;
+}
+
+#w-node-_2ba4de42-04c3-3950-c153-148ee66b6fe2-6f5c87c4 {
+  grid-area: project-headline-01;
+}
+
+#w-node-c66a4dd4-a6b1-a3f5-1e6f-d1e2f0fe8795-6f5c87c4 {
+  grid-area: vision;
+}
+
+#w-node-bc7857d1-eff7-db75-d968-5354075b6be8-6f5c87c4 {
+  grid-area: sabotage;
+}
+
+#w-node-_6c0dc1cb-ab56-07e0-665d-b7e074c97642-6f5c87c4 {
+  grid-area: sue-me;
+}
+
+#w-node-b7d7a151-67c8-dc57-f820-42a22951478f-6f5c87c4 {
+  grid-area: vision-description;
+}
+
+#w-node-_6e1286b9-b8b3-f144-4929-7349663247e9-6f5c87c4 {
+  grid-area: sabotage-description;
+}
+
+#w-node-ef91471a-782b-3f2e-9a97-0cb04b17810b-6f5c87c4 {
+  grid-area: sue-me-description;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06e1-6f5c87c4 {
+  grid-area: project-headline;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06dd-6f5c87c4 {
+  grid-area: berry-blend-description;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06e0-6f5c87c4 {
+  grid-area: berry-blend-01;
+  place-self: center;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06e4-6f5c87c4 {
+  grid-area: berry-blend-02;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06f2-6f5c87c4 {
+  grid-area: sue-me-01;
+  place-self: center;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06f3-6f5c87c4 {
+  grid-area: vitra;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06fe-6f5c87c4 {
+  grid-area: gpb-01;
+  place-self: center;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06da-6f5c87c4 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06ef-6f5c87c4 {
+  grid-area: sue-me-description;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06c9-6f5c87c4 {
+  grid-area: gpb-02;
+}
+
+#w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06ff-6f5c87c4 {
+  grid-area: gpb-description;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3c8-4b1e8868 {
+  grid-area: project-headline;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3cb-4b1e8868 {
+  grid-area: fabrik-02;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3cc-4b1e8868 {
+  grid-area: fabrik-01;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3cd-4b1e8868 {
+  grid-area: fabrik-03;
+}
+
+#w-node-_4b9f744b-705d-0706-7cca-a8e520fc4e44-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3dd-4b1e8868 {
+  grid-area: fabrik-description;
+}
+
+#w-node-a36d4980-1b8f-fd59-6f8b-6ffccf4b2e2c-4b1e8868 {
+  grid-area: off-season-02;
+}
+
+#w-node-_6581bba7-b7fd-3324-f7fc-be4c5567b6bc-4b1e8868 {
+  grid-area: off-season-03;
+}
+
+#w-node-_955e3ddf-6951-8142-96b8-d5d3c0c5e4e1-4b1e8868 {
+  grid-area: off-season-01;
+}
+
+#w-node-_4ad5c11a-b811-d6ec-13f0-c8d2d940adbf-4b1e8868 {
+  grid-area: off-season-01-btn;
+}
+
+#w-node-eb1e18b5-e7ca-2c7c-ad6a-53ff0c06ffaf-4b1e8868 {
+  grid-area: off-season-03-btn;
+}
+
+#w-node-d3a03e49-3213-57d5-59d0-f94acdaef379-4b1e8868 {
+  grid-area: off-season-02-btn;
+}
+
+#off-season-logo.w-node-_74b4a29f-c754-5a3b-4bdc-3ef83055b625-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  place-self: center start;
+}
+
+#w-node-_2f27dc00-f0e1-b0e7-4bad-1cdae8457b5b-4b1e8868 {
+  grid-area: project-headline-description;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b47f-4b1e8868 {
+  grid-area: project-headline-01;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b482-4b1e8868 {
+  grid-area: vision;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b486-4b1e8868 {
+  grid-area: sabotage;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b48a-4b1e8868 {
+  grid-area: sue-me;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b48e-4b1e8868 {
+  grid-area: vision-description;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b491-4b1e8868 {
+  grid-area: sabotage-description;
+}
+
+#w-node-_2a4da13c-3111-2382-a67d-e6183fb4d454-4b1e8868 {
+  grid-area: issey-miyake-01;
+}
+
+#w-node-_925a02c4-4efb-1025-d86c-46153e17b494-4b1e8868 {
+  grid-area: sue-me-description;
+}
+
+#w-node-ff06d00e-5f9e-f68c-8122-d79db8aa566c-4b1e8868, #w-node-_9407dc7a-7dc9-1c28-b662-8881f8b72225-4b1e8868, #w-node-_7262d45d-572b-8381-b14e-a780c2cad968-4b1e8868, #w-node-e7f8fa73-8e54-1db2-9ae2-4af4cd45fa9f-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_4fe82f59-3687-1bbb-4ebb-e07efecb9b73-4b1e8868 {
+  grid-area: destination-w;
+}
+
+#w-node-_9e3e6f09-57ff-2639-9515-abf0722754d7-4b1e8868 {
+  grid-area: destination-w-description;
+}
+
+#w-node-_2e2e6be2-bc2d-502c-e157-9406fe385e4f-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_23694b2e-5235-ca6a-dc05-825581aac1ca-4b1e8868 {
+  grid-area: vitra-description;
+}
+
+#w-node-_57c33d82-e492-0065-60fb-311725337c7e-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864ccf3-4b1e8868 {
+  grid-area: project-headline;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864ccf6-4b1e8868 {
+  grid-area: berry-blend-description;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864ccf9-4b1e8868 {
+  grid-area: berry-blend-01;
+  place-self: center;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864ccfa-4b1e8868 {
+  grid-area: berry-blend-02;
+}
+
+#sue-me-logo.w-node-eba0a40a-e13d-e939-c791-d9e30864cd05-4b1e8868 {
+  grid-area: sue-me-01;
+  place-self: center;
+}
+
+#off-season-logo.w-node-_1f219bfc-061a-6efd-c094-9f87d6dc6bd9-4b1e8868 {
+  grid-area: off-season-01;
+  place-self: center;
+}
+
+#w-node-_62fd5614-ce88-a827-4f4c-a399fc699cfe-4b1e8868 {
+  grid-area: sue-me-02;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864cd11-4b1e8868 {
+  grid-area: gpb-01;
+  place-self: center;
+}
+
+#w-node-a079229d-9d75-73c8-f063-832887581d4a-4b1e8868 {
+  grid-area: off-season-02;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864cd15-4b1e8868 {
+  grid-area: sue-me-description;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864cd18-4b1e8868 {
+  grid-area: gpb-02;
+}
+
+#w-node-eba0a40a-e13d-e939-c791-d9e30864cd29-4b1e8868 {
+  grid-area: gpb-description;
+}
+
+#w-node-efc0280a-d9ff-ffc8-81e4-6a77d4971714-4b1e8868 {
+  grid-area: gpb-03;
+}
+
+#w-node-_914cd455-2134-3595-e788-3e725ccae9c4-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_685a6b0b-f246-e315-45c1-4be57d5c8213-4b1e8868 {
+  grid-area: off-season-03;
+}
+
+#w-node-_028cc0f8-bc7a-6da3-1df4-742248d5a4c5-4b1e8868 {
+  grid-area: project-headline-01;
+}
+
+#w-node-c89f0b06-3fb7-13cb-deba-b3ab8c9a6982-4b1e8868 {
+  grid-area: wavelength-lettering;
+  place-self: center;
+}
+
+#w-node-_32d3de08-77fc-374c-49a0-e031c39bc8c5-4b1e8868 {
+  grid-area: grimes-01;
+}
+
+#w-node-_6234b650-688c-a648-0c92-ce7b7706525c-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-a63aac6b-6fec-3923-ae61-950501894545-4b1e8868 {
+  grid-area: grimes-description;
+}
+
+#w-node-a43587f3-2213-2068-00c7-54646cf47d91-4b1e8868 {
+  grid-area: wavelength-description;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298beb-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298bfb-4b1e8868 {
+  grid-area: jette-gallery;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298bfc-4b1e8868 {
+  grid-area: jette-01;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298bfd-4b1e8868, #w-node-_060ea2f4-d9fb-4edc-9754-97774d298bfe-4b1e8868, #w-node-_060ea2f4-d9fb-4edc-9754-97774d298bff-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c00-4b1e8868 {
+  grid-area: jette-05;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c01-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c04-4b1e8868 {
+  grid-area: jette-01;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c05-4b1e8868, #w-node-_060ea2f4-d9fb-4edc-9754-97774d298c06-4b1e8868, #w-node-_060ea2f4-d9fb-4edc-9754-97774d298c07-4b1e8868, #w-node-_060ea2f4-d9fb-4edc-9754-97774d298c08-4b1e8868, #w-node-_060ea2f4-d9fb-4edc-9754-97774d298c09-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c0c-4b1e8868 {
+  grid-area: jette-01;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c0d-4b1e8868, #w-node-_060ea2f4-d9fb-4edc-9754-97774d298c0e-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c0f-4b1e8868 {
+  grid-area: jette-06;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c10-4b1e8868 {
+  grid-area: jette-05;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c11-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c14-4b1e8868 {
+  grid-area: jette-01;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c15-4b1e8868, #w-node-_060ea2f4-d9fb-4edc-9754-97774d298c16-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c17-4b1e8868 {
+  grid-area: jette-05;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c18-4b1e8868 {
+  grid-area: jette-06;
+}
+
+#w-node-_060ea2f4-d9fb-4edc-9754-97774d298c19-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#art-direction.w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c4b-4b1e8868 {
+  grid-area: project-headline;
+}
+
+#w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c4e-4b1e8868 {
+  grid-area: jette-product-shots-description;
+}
+
+#w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c51-4b1e8868 {
+  grid-area: jette-product-shots;
+}
+
+#w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c62-4b1e8868 {
+  grid-area: jette-description;
+}
+
+#w-node-_69869ce6-0a5f-9df4-4b11-17ac45c694f1-4b1e8868, #w-node-_69869ce6-0a5f-9df4-4b11-17ac45c694fa-4b1e8868, #w-node-_69869ce6-0a5f-9df4-4b11-17ac45c69505-4b1e8868 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+@media screen and (max-width: 991px) {
+  #w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3c8-6f5c87b9 {
+    grid-area: project-headline;
+  }
+
+  #w-node-_4b9f744b-705d-0706-7cca-a8e520fc4e44-6f5c87b9 {
+    grid-area: website-btn-01;
+  }
+
+  #w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3dd-6f5c87b9 {
+    grid-area: vision;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b47f-6f5c87b9 {
+    grid-area: project-headline;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b494-6f5c87b9 {
+    grid-area: sue-me-description;
+  }
+
+  #w-node-ff06d00e-5f9e-f68c-8122-d79db8aa566c-6f5c87b9 {
+    grid-area: issey-miyake-description;
+  }
+
+  #w-node-_9407dc7a-7dc9-1c28-b662-8881f8b72225-6f5c87b9 {
+    grid-area: issey-miyake-02;
+  }
+
+  #w-node-_7262d45d-572b-8381-b14e-a780c2cad968-6f5c87b9 {
+    grid-area: issey-miyake-03;
+  }
+
+  #w-node-e7f8fa73-8e54-1db2-9ae2-4af4cd45fa9f-6f5c87b9 {
+    grid-area: issey-miyake-04;
+  }
+
+  #w-node-_2e2e6be2-bc2d-502c-e157-9406fe385e4f-6f5c87b9 {
+    grid-area: vitra-01;
+  }
+
+  #w-node-_57c33d82-e492-0065-60fb-311725337c7e-6f5c87b9 {
+    grid-area: vitra-02;
+  }
+
+  #w-node-_4ad5c11a-b811-d6ec-13f0-c8d2d940adbf-6f5c87b9 {
+    grid-area: off-season-02-btn;
+  }
+
+  #w-node-eb1e18b5-e7ca-2c7c-ad6a-53ff0c06ffaf-6f5c87b9 {
+    grid-area: off-season-03-btn;
+  }
+
+  #w-node-d3a03e49-3213-57d5-59d0-f94acdaef379-6f5c87b9 {
+    grid-area: off-season-01-btn;
+  }
+
+  #w-node-_2f27dc00-f0e1-b0e7-4bad-1cdae8457b5b-6f5c87b9 {
+    grid-area: project-headline-description;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864ccfa-6f5c87b9 {
+    grid-area: berry-blend-02;
+  }
+
+  #sue-me-logo.w-node-eba0a40a-e13d-e939-c791-d9e30864cd05-6f5c87b9 {
+    grid-area: sue-me-01;
+    place-self: center;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864cd11-6f5c87b9 {
+    grid-area: gpb-01;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864cd18-6f5c87b9 {
+    grid-area: gpb-02;
+  }
+
+  #w-node-efc0280a-d9ff-ffc8-81e4-6a77d4971714-6f5c87b9 {
+    grid-area: gpb-03;
+  }
+
+  #w-node-_685a6b0b-f246-e315-45c1-4be57d5c8213-6f5c87b9 {
+    grid-area: off-season-03;
+  }
+
+  #w-node-_028cc0f8-bc7a-6da3-1df4-742248d5a4c5-6f5c87b9 {
+    grid-area: project-headline-01;
+  }
+
+  #w-node-_32d3de08-77fc-374c-49a0-e031c39bc8c5-6f5c87b9 {
+    grid-area: grimes-01;
+  }
+
+  #w-node-_6234b650-688c-a648-0c92-ce7b7706525c-6f5c87b9 {
+    grid-area: wavelength-01;
+  }
+
+  #w-node-_0481d4b3-b4ca-5203-f9fd-b6b22c8d0fd6-6f5c87b9 {
+    grid-area: jette-gallery;
+  }
+
+  #art-direction.w-node-_6e59923a-992a-2b8b-c7d8-be36bb46c4ae-6f5c87b9 {
+    grid-area: project-h3;
+  }
+
+  #w-node-_517bcdd2-c44e-eeff-0d86-09e61ab72ae9-6f5c87b9 {
+    grid-area: jette-product-shots;
+  }
+
+  #w-node-_6e59923a-992a-2b8b-c7d8-be36bb46c4b1-6f5c87b9 {
+    grid-area: jette-description;
+  }
+
+  #w-node-ec1c083b-8c18-d8e6-9e6e-278e975dd117-6f5c87c4 {
+    grid-area: project-headline;
+  }
+
+  #w-node-ec1c083b-8c18-d8e6-9e6e-278e975dd125-6f5c87c4 {
+    grid-area: website-btn-01;
+  }
+
+  #w-node-ec1c083b-8c18-d8e6-9e6e-278e975dd136-6f5c87c4 {
+    grid-area: vision;
+  }
+
+  #w-node-_2ba4de42-04c3-3950-c153-148ee66b6fe2-6f5c87c4 {
+    grid-area: project-headline;
+  }
+
+  #w-node-ef91471a-782b-3f2e-9a97-0cb04b17810b-6f5c87c4 {
+    grid-area: sue-me-description;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06e4-6f5c87c4 {
+    grid-area: berry-blend-02;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06f2-6f5c87c4 {
+    grid-area: sue-me-01;
+    place-self: center;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06f3-6f5c87c4 {
+    grid-area: vitra;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06fe-6f5c87c4 {
+    grid-area: gpb-01;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06da-6f5c87c4 {
+    grid-area: vitra-description;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06c9-6f5c87c4 {
+    grid-area: gpb-02;
+  }
+
+  #w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3c8-4b1e8868 {
+    grid-area: project-headline;
+  }
+
+  #w-node-_4b9f744b-705d-0706-7cca-a8e520fc4e44-4b1e8868 {
+    grid-area: website-btn-01;
+  }
+
+  #w-node-_26df86bd-7d44-e2bd-7956-974bbec8b3dd-4b1e8868 {
+    grid-area: vision;
+  }
+
+  #w-node-_4ad5c11a-b811-d6ec-13f0-c8d2d940adbf-4b1e8868 {
+    grid-area: off-season-02-btn;
+  }
+
+  #w-node-eb1e18b5-e7ca-2c7c-ad6a-53ff0c06ffaf-4b1e8868 {
+    grid-area: off-season-03-btn;
+  }
+
+  #w-node-d3a03e49-3213-57d5-59d0-f94acdaef379-4b1e8868 {
+    grid-area: off-season-01-btn;
+  }
+
+  #w-node-_2f27dc00-f0e1-b0e7-4bad-1cdae8457b5b-4b1e8868 {
+    grid-area: project-headline-description;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b47f-4b1e8868 {
+    grid-area: project-headline;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b494-4b1e8868 {
+    grid-area: sue-me-description;
+  }
+
+  #w-node-ff06d00e-5f9e-f68c-8122-d79db8aa566c-4b1e8868 {
+    grid-area: issey-miyake-description;
+  }
+
+  #w-node-_9407dc7a-7dc9-1c28-b662-8881f8b72225-4b1e8868 {
+    grid-area: issey-miyake-02;
+  }
+
+  #w-node-_7262d45d-572b-8381-b14e-a780c2cad968-4b1e8868 {
+    grid-area: issey-miyake-03;
+  }
+
+  #w-node-e7f8fa73-8e54-1db2-9ae2-4af4cd45fa9f-4b1e8868 {
+    grid-area: issey-miyake-04;
+  }
+
+  #w-node-_2e2e6be2-bc2d-502c-e157-9406fe385e4f-4b1e8868 {
+    grid-area: vitra-01;
+  }
+
+  #w-node-_57c33d82-e492-0065-60fb-311725337c7e-4b1e8868 {
+    grid-area: vitra-02;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864ccfa-4b1e8868 {
+    grid-area: berry-blend-02;
+  }
+
+  #sue-me-logo.w-node-eba0a40a-e13d-e939-c791-d9e30864cd05-4b1e8868 {
+    grid-area: sue-me-01;
+    place-self: center;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864cd11-4b1e8868 {
+    grid-area: gpb-01;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864cd18-4b1e8868 {
+    grid-area: gpb-02;
+  }
+
+  #w-node-efc0280a-d9ff-ffc8-81e4-6a77d4971714-4b1e8868 {
+    grid-area: gpb-03;
+  }
+
+  #w-node-_685a6b0b-f246-e315-45c1-4be57d5c8213-4b1e8868 {
+    grid-area: off-season-03;
+  }
+
+  #w-node-_028cc0f8-bc7a-6da3-1df4-742248d5a4c5-4b1e8868 {
+    grid-area: project-headline-01;
+  }
+
+  #w-node-_32d3de08-77fc-374c-49a0-e031c39bc8c5-4b1e8868 {
+    grid-area: grimes-01;
+  }
+
+  #w-node-_6234b650-688c-a648-0c92-ce7b7706525c-4b1e8868 {
+    grid-area: wavelength-01;
+  }
+
+  #w-node-_060ea2f4-d9fb-4edc-9754-97774d298beb-4b1e8868 {
+    grid-area: jette-gallery;
+  }
+
+  #art-direction.w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c4b-4b1e8868 {
+    grid-area: project-h3;
+  }
+
+  #w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c51-4b1e8868 {
+    grid-area: jette-product-shots;
+  }
+
+  #w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c62-4b1e8868 {
+    grid-area: jette-description;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b482-6f5c87b9 {
+    grid-area: vision;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b486-6f5c87b9 {
+    grid-area: sabotage;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b48a-6f5c87b9 {
+    grid-area: sue-me;
+  }
+
+  #w-node-_9407dc7a-7dc9-1c28-b662-8881f8b72225-6f5c87b9 {
+    grid-area: issey-miyake-02;
+  }
+
+  #w-node-_7262d45d-572b-8381-b14e-a780c2cad968-6f5c87b9 {
+    grid-area: issey-miyake-03;
+  }
+
+  #w-node-e7f8fa73-8e54-1db2-9ae2-4af4cd45fa9f-6f5c87b9 {
+    grid-area: issey-miyake-04;
+  }
+
+  #w-node-_4fe82f59-3687-1bbb-4ebb-e07efecb9b73-6f5c87b9 {
+    grid-area: destination-w;
+  }
+
+  #w-node-_2e2e6be2-bc2d-502c-e157-9406fe385e4f-6f5c87b9 {
+    grid-area: vitra-01;
+  }
+
+  #w-node-_57c33d82-e492-0065-60fb-311725337c7e-6f5c87b9 {
+    grid-area: vitra-02;
+  }
+
+  #w-node-a36d4980-1b8f-fd59-6f8b-6ffccf4b2e2c-6f5c87b9 {
+    grid-area: off-season-02;
+  }
+
+  #w-node-_6581bba7-b7fd-3324-f7fc-be4c5567b6bc-6f5c87b9 {
+    grid-area: off-season-03;
+  }
+
+  #w-node-_955e3ddf-6951-8142-96b8-d5d3c0c5e4e1-6f5c87b9 {
+    grid-area: off-season-01;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864ccfa-6f5c87b9 {
+    grid-area: berry-blend-02;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864cd18-6f5c87b9 {
+    grid-area: gpb-02;
+  }
+
+  #w-node-_914cd455-2134-3595-e788-3e725ccae9c4-6f5c87b9 {
+    grid-area: off-season-description;
+  }
+
+  #w-node-_028cc0f8-bc7a-6da3-1df4-742248d5a4c5-6f5c87b9 {
+    grid-area: project-headline-01;
+  }
+
+  #w-node-_32d3de08-77fc-374c-49a0-e031c39bc8c5-6f5c87b9 {
+    grid-area: grimes-01;
+  }
+
+  #w-node-_6234b650-688c-a648-0c92-ce7b7706525c-6f5c87b9 {
+    grid-area: wavelength-01;
+  }
+
+  #art-direction.w-node-_6e59923a-992a-2b8b-c7d8-be36bb46c4ae-6f5c87b9 {
+    grid-area: project-h3;
+  }
+
+  #w-node-_517bcdd2-c44e-eeff-0d86-09e61ab72ae9-6f5c87b9 {
+    grid-area: jette-product-shots;
+  }
+
+  #w-node-c66a4dd4-a6b1-a3f5-1e6f-d1e2f0fe8795-6f5c87c4 {
+    grid-area: vision;
+  }
+
+  #w-node-bc7857d1-eff7-db75-d968-5354075b6be8-6f5c87c4 {
+    grid-area: sabotage;
+  }
+
+  #w-node-_6c0dc1cb-ab56-07e0-665d-b7e074c97642-6f5c87c4 {
+    grid-area: sue-me;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06e4-6f5c87c4 {
+    grid-area: berry-blend-02;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06f3-6f5c87c4 {
+    grid-area: vitra;
+  }
+
+  #w-node-_19fd0ce5-7123-77f7-a61a-6155c10a06c9-6f5c87c4 {
+    grid-area: gpb-02;
+  }
+
+  #w-node-a36d4980-1b8f-fd59-6f8b-6ffccf4b2e2c-4b1e8868 {
+    grid-area: off-season-02;
+  }
+
+  #w-node-_6581bba7-b7fd-3324-f7fc-be4c5567b6bc-4b1e8868 {
+    grid-area: off-season-03;
+  }
+
+  #w-node-_955e3ddf-6951-8142-96b8-d5d3c0c5e4e1-4b1e8868 {
+    grid-area: off-season-01;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b482-4b1e8868 {
+    grid-area: vision;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b486-4b1e8868 {
+    grid-area: sabotage;
+  }
+
+  #w-node-_925a02c4-4efb-1025-d86c-46153e17b48a-4b1e8868 {
+    grid-area: sue-me;
+  }
+
+  #w-node-_9407dc7a-7dc9-1c28-b662-8881f8b72225-4b1e8868 {
+    grid-area: issey-miyake-02;
+  }
+
+  #w-node-_7262d45d-572b-8381-b14e-a780c2cad968-4b1e8868 {
+    grid-area: issey-miyake-03;
+  }
+
+  #w-node-e7f8fa73-8e54-1db2-9ae2-4af4cd45fa9f-4b1e8868 {
+    grid-area: issey-miyake-04;
+  }
+
+  #w-node-_4fe82f59-3687-1bbb-4ebb-e07efecb9b73-4b1e8868 {
+    grid-area: destination-w;
+  }
+
+  #w-node-_2e2e6be2-bc2d-502c-e157-9406fe385e4f-4b1e8868 {
+    grid-area: vitra-01;
+  }
+
+  #w-node-_57c33d82-e492-0065-60fb-311725337c7e-4b1e8868 {
+    grid-area: vitra-02;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864ccfa-4b1e8868 {
+    grid-area: berry-blend-02;
+  }
+
+  #w-node-eba0a40a-e13d-e939-c791-d9e30864cd18-4b1e8868 {
+    grid-area: gpb-02;
+  }
+
+  #w-node-_914cd455-2134-3595-e788-3e725ccae9c4-4b1e8868 {
+    grid-area: off-season-description;
+  }
+
+  #w-node-_028cc0f8-bc7a-6da3-1df4-742248d5a4c5-4b1e8868 {
+    grid-area: project-headline-01;
+  }
+
+  #w-node-_32d3de08-77fc-374c-49a0-e031c39bc8c5-4b1e8868 {
+    grid-area: grimes-01;
+  }
+
+  #w-node-_6234b650-688c-a648-0c92-ce7b7706525c-4b1e8868 {
+    grid-area: wavelength-01;
+  }
+
+  #art-direction.w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c4b-4b1e8868 {
+    grid-area: project-h3;
+  }
+
+  #w-node-eae8f1f1-a5b4-7313-d8ff-00db2b6a1c51-4b1e8868 {
+    grid-area: jette-product-shots;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-faf40c6f-fed9-a5db-1e76-6cea53c62507-6f5c87c0, #w-node-faf40c6f-fed9-a5db-1e76-6cea53c62507-6f5c87c1 {
+    grid-area: impressum;
+  }
+}
+
+
+@font-face {
+  font-family: 'Fugaz One';
+  src: url('../fonts/FugazOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('../fonts/ZillaSlab-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('../fonts/ZillaSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('../fonts/ZillaSlab-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Zilla Slab';
+  src: url('../fonts/ZillaSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
